@@ -1,15 +1,36 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MdFingerprint } from 'react-icons/md';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Button } from './Button';
+import './Navbar.css';
+import { IconContext } from 'react-icons/lib';
 
 function Navbar() {
 
     const [ click , setClick ] = useState(false);
     const handleClick = () => setClick(!click);
 
+    const [ button, setButton ] = useState(true);
+    const  closeMobileMenu = () => setClick(false);
+
+    const showButton = () => {
+        if(window.innerWidth <= 960){
+            setButton(false);
+        }else{
+            setButton(true);
+        }
+    };
+
+    useEffect(() => {
+        showButton();
+    }, []);
+
+    window.addEventListener('resize', showButton);
+
     return (
         <>
+        <IconContext.Provider value={{color: '#fff'}}>
             <div className="navbar">
                 <div className="navbar-container container">
                     <Link to='/' className="navbar-logo">
@@ -50,6 +71,7 @@ function Navbar() {
                     </ul>
                 </div>
             </div>
+        </IconContext.Provider>
         </>
     )
 }
