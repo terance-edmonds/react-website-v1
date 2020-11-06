@@ -62,8 +62,10 @@
   }
   
   .nav-item {
+    padding-right: 5px;
     height: 80px;
     border-bottom: 4px solid transparent;
+    transition: all 0.3s ease-out;
   }
   
   .nav-item:hover {
