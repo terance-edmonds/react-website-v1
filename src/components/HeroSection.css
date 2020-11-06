@@ -9,14 +9,17 @@
 
 .row{
     display: flex;
-    margin: 0 -15px -15px -15px;
+    margin-right: -15px;
+    margin-bottom: -15px;
+    margin-left: -15px;
     flex-wrap: wrap;
     align-content: stretch;
 }
 
 .col{
     margin-bottom: 15px;
-    padding: 0 15px 15px 0;
+    padding-right: 15px;
+    padding-left: 15px;
     flex: 1;
     max-width: 50%;
     flex-basis: 50%;
@@ -75,4 +78,22 @@ img{
     max-width: 100%;
     vertical-align: middle;
     display: inline-block;
+}
+
+@media screen and (max-width: 991px){
+    .container{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .home__hero-text-wrapper{
+        padding-bottom: 65px;
+    }
+
+    .col{
+        max-width: 100%;
+        flex-basis: 100%;
+    }
 }
