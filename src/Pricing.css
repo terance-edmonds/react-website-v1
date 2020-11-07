@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: #fafafa;
+    background: #f0efef;
 }
 
 .pricing__container-card{
@@ -22,7 +22,7 @@
 }
 
 .pricing__container-card:hover{
-    transform: scale(1.06);
+    transform: scale(1.07);
     transition: all 0.3s ease-out;
     color: #1c2237;
 }
