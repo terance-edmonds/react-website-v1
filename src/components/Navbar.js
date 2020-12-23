@@ -33,16 +33,16 @@ function Navbar() {
         <IconContext.Provider value={{color: '#fff'}}>
             <div className="navbar">
                 <div className="navbar-container container">
-                    <Link to='/' className="navbar-logo" onClick={closeMobileMenu}>
+                    <Link to='/react-website-v1/' className="navbar-logo" onClick={closeMobileMenu}>
                     <MdFingerprint className="navbar-icon" />
-                    My Blog
+                    Price Pay
                     </Link>
                     <div className="menu-icon" onClick={ handleClick }>
                         { click ? <FaTimes/> : <FaBars/> }
                     </div>
                     <ul className= {click ? 'nav-menu active': 'nav-menu'}>
                         <li className="nav-item">
-                            <Link to='/' className="nav-links" onClick={closeMobileMenu}>
+                            <Link to='/react-website-v1/' className="nav-links" onClick={closeMobileMenu}>
                                 Home
                             </Link>
                         </li>

@@ -16,7 +16,7 @@ function Pricing() {
                     <div className="pricing__heading">
                         <div className="pricing__container">
 
-                            <Link to='/sign-up' className="pricing__container-card">
+                            <Link to='/sign-up' className="pricing__container-card" data-aos-delay="100" data-aos="zoom-in-down">
                                 <div className="pricing__container-cardInfo">
                                     <div className="icon">
                                         <FaFire />
@@ -33,7 +33,7 @@ function Pricing() {
                                 </div>
                             </Link>
 
-                            <Link to='/sign-up' className="pricing__container-card">
+                            <Link to='/sign-up' className="pricing__container-card" data-aos-delay="100" data-aos="zoom-in-down">
                                 <div className="pricing__container-cardInfo">
                                     <div className="icon">
                                         <GiCrystalize />
@@ -50,7 +50,7 @@ function Pricing() {
                                 </div>
                             </Link>
 
-                            <Link to='/sign-up' className="pricing__container-card">
+                            <Link to='/sign-up' className="pricing__container-card" data-aos-delay="100" data-aos="zoom-in-down">
                                 <div className="pricing__container-cardInfo">
                                     <div className="icon">
                                         <BsXDiamondFill />

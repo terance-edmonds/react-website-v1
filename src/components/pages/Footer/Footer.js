@@ -73,10 +73,10 @@ function Footer() {
           <div className='footer-logo'>
             <Link to='/' className='social-logo'>
               <MdFingerprint className='navbar-icon' />
-              My Blog
+              Price Pay
             </Link>
           </div>
-          <small className='website-rights'>MY Blog © 2020</small>
+          <small className='website-rights'>Price Pay © 2020</small>
           <div className='social-icons'>
             <Link
               className='social-icon-link'
